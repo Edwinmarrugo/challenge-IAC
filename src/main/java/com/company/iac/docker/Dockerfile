@@ -1,8 +1,8 @@
 # Dockerfile multi-stage
 FROM openjdk:21-jdk-alpine AS build
 WORKDIR /app
-COPY..
-RUN./gradlew build
+COPY ..
+RUN ./gradlew build
 
 FROM openjdk:21-jdk-alpine
 WORKDIR /app
